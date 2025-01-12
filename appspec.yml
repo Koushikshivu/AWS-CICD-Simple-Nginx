@@ -2,7 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /var/www/html/index.html
+    destination: /usr/share/nginx/html/
+    overwrite: true
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
